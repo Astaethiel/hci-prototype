@@ -12,6 +12,8 @@ app.get('/', (req, res) => {
   res.sendFile(__dirname + '/style.css');
 });
 
+app.use(express.static('public'))
+
 io.on('connection', (socket) => {
   console.log('a user connected');
   socket.on('disconnect', () => {
