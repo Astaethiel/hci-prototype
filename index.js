@@ -8,11 +8,13 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
-  res.sendFile(__dirname + '/style.css');
+  res.sendFile(__dirname + '/public/html/driver.html');
 });
 
 app.use(express.static('public'))
+app.use('/css', express.static('public/css'))
+app.use('/images', express.static('public/images'))
+app.use('/html', express.static('public/html'))
 
 io.on('connection', (socket) => {
   console.log('a user connected');

@@ -1,0 +1,290 @@
+      body { 
+            margin: 0;
+            padding-bottom: 3rem; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+      }
+      .grid-container {
+            display: grid;
+            gap: 5px;
+            background-color: #2196F3;
+            padding: 5px;
+      }
+      .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            font-size: 30px;
+      }
+
+      .btn {
+            height: 100%;
+      }
+      /* Media controls */
+      .back_track {
+            grid-column: 1;
+            grid-row: 1;
+      }
+      .pause {
+            grid-column: 2;
+            grid-row: 1;
+      }
+      .forward_track {
+            grid-column: 3;
+            grid-row: 1;
+      }
+      .vol_down {
+            grid-column: 1;
+            grid-row: 2;
+      }
+      .mute {
+            grid-column: 2;
+            grid-row: 2;
+      }
+      .vol_up {
+            grid-column: 3;
+            grid-row: 2;
+      }
+      .media_control_icons {
+            max-width: 80px;
+      }
+      /* style for panel on left that is always there */
+      .perm_pannel {
+            grid-column: 1;
+            grid-row: 1;
+      }
+      .media_playing {
+            grid-column: 1;
+            grid-row: 1 /span 2;
+      }
+      .media_playing_img {
+            max-width: 100%;
+      }
+
+      .listen_along_btn {
+            grid-column: 1;
+            grid-row: 3;
+      }
+      .connect_btn {
+            grid-column: 1;
+            grid-row: 4;
+      }
+      .media_controls {
+            grid-column: 1;
+            grid-row: 5 / span 2;
+      }
+      .seat_selector {
+            grid-column: 1;
+            grid-row: 7 / span 3;
+      }
+      .seat_1 {
+            grid-column: 1;
+            grid-row: 1;
+      }
+      .seat_d {
+            grid-column: 2;
+            grid-row: 1;
+      }
+      .seat_2 {
+            grid-column: 1;
+            grid-row: 2;
+      }
+      .seat_3 {
+            grid-column: 2;
+            grid-row: 2;
+      }
+      /* style for panel on right that changes between different tabs */
+      .menu_pannel {
+            grid-column: 2;
+            grid-row: 1;
+            min-width: 80vw;
+      }
+      .tabcontent {
+            display: none;
+      }
+      .control_tab {
+            grid-column: 1;
+            grid-row: 1;
+      }
+      .nav_tab {
+            grid-column: 2;
+            grid-row: 1;
+      }
+      .apps_tab {
+            grid-column: 3;
+            grid-row: 1;
+      }
+      /* layout for driver controls */
+      .d_doors {
+            grid-column: 1;
+            grid-row: 1;
+      }
+      .d_windows {
+            grid-column: 2;
+            grid-row: 1;
+      }
+      .d_media {
+            grid-column: 3 / span 2;
+            grid-row: 1;
+      }
+      .d_ramp {
+            grid-column: 1;
+            grid-row: 2;
+      }
+      .d_heat {
+            grid-column: 2;
+            grid-row: 2;
+      }
+      .d_seat {
+            grid-column: 3 / span 2;
+            grid-row: 2;
+      }
+      /* Header for door for driver control */
+      .d_head_1{
+            grid-column: 1;
+            grid-row: 1;
+      }
+      /* Header for windows, ramp, heat and media for driver control */
+      .d_head_2{
+            grid-column: 1 / span 2;
+            grid-row: 1;
+      }
+      /* Header for seat adjust for driver control */
+      .d_head_3{
+            grid-column: 1 / span 4;
+            grid-row: 1;
+      }
+      /* style for lock and seat selection for doors on driver control */
+      .d_s_lock_all {
+            grid-column: 1;
+            grid-row: 2;
+      }
+      .d_s_seat_select {
+            grid-column: 1;
+            grid-row: 3;
+      }
+      /* lock door driver control */
+      .d_s_lock_door {
+            grid-column: 1;
+            grid-row: 4 / span 2;
+      }
+
+      /* lock and seat selection for windows and heat on driver control */
+      .d_lock_all {
+            grid-column: 1 / span 2;
+            grid-row: 2;
+      }
+      .d_seat_select {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+      }
+      /* lock window and heated on driver control */
+      .d_lock {
+            grid-column: 1;
+            grid-row: 4 / span 2;
+      }
+      .d_wh_up {
+            grid-column: 2;
+            grid-row: 4;
+      }
+      .d_wh_down {
+            grid-column: 2;
+            grid-row: 5;
+      }
+
+      /* media buttons for driver control */
+      .d_m_lock_all {
+            grid-column: 1;
+            grid-row: 2;
+      }
+      .d_m_shutdown_all {
+            grid-column: 2;
+            grid-row: 2;
+      }
+      .d_m_seat_selected {
+            grid-column: 1 / span 2;
+            grid-row: 3;
+      }
+      .d_m_title {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+      }
+      .d_m_lock {
+            grid-column: 1;
+            grid-row: 5;
+      }
+      .d_m_shutdown {
+            grid-column: 1;
+            grid-row: 6;
+      }
+      .d_m_controls {
+            grid-column: 2;
+            grid-row: 5 / span 2;
+      }
+
+      /* ramp controls */
+      .d_r_level {
+            grid-column: 1;
+            grid-row: 2 / span 2;
+      }
+      .d_r_up {
+            grid-column: 2;
+            grid-row: 2;
+      }
+      .d_r_down {
+            grid-column: 2;
+            grid-row: 3;
+      }
+
+      /* Seat adjustment in driver control */
+      .d_a_seat_selected {
+            grid-column: 1 / span 4;
+            grid-row: 2;
+      }
+      .d_a_headrest {
+            grid-column: 1;
+            grid-row: 3;
+      }
+      .d_a_headrest_up {
+            grid-column: 1;
+            grid-row: 4;
+      }
+      .d_a_headrest_down {
+            grid-column: 1;
+            grid-row: 5;
+      }
+      .d_a_height {
+            grid-column: 2;
+            grid-row: 3;
+      }
+      .d_a_height_up {
+            grid-column: 2;
+            grid-row: 4;
+      }
+      .d_a_height_down {
+            grid-column: 2;
+            grid-row: 5;
+      }
+      .d_a_lumbar {
+            grid-column: 3;
+            grid-row: 3;
+      }
+      .d_a_lumbar_up {
+            grid-column: 3;
+            grid-row: 4;
+      }
+      .d_a_lumbar_down {
+            grid-column: 3;
+            grid-row: 5;
+      }
+      .d_a_recline {
+            grid-column: 4;
+            grid-row: 3;
+      }
+      .d_a_recline_up {
+            grid-column: 4;
+            grid-row: 4;
+      }
+      .d_a_recline_down {
+            grid-column: 4;
+            grid-row: 5;
+      }
